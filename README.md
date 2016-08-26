@@ -16,10 +16,20 @@
 # Setup
 * Download the theme
 * Extract the downloaded theme and place 'basic' folder inside your themes folder of your application.
+* Activate this theme in config/all.js as shown below
+
+    ```
+     {
+        theme : 'basic'
+     }
+    ```
+* Run the Application
+
+    ``` npm start ```
 
 # Documentation
 Here is the Documentation link - https://github.com/raweng/contentstack-express-blog-app/wiki:
 
 # Demo
-Running Apps:
+Running App:
 * http://blog.builtapp.io/blog
