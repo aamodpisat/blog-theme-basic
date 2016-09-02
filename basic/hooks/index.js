@@ -3,8 +3,8 @@
  */
 
 var Hooks = {};
-Hooks.serverExtends = function(app) {
-    app.use('/blog', function(req, res, next){
+Hooks.serverExtends = function(app, Blog) {
+    app.use(Blog.Routes.home, function(req, res, next){
         Blog.getRecentPosts()
             .spread(function success(entries){
                 req.getViewContext().set('recentPosts', entries);
